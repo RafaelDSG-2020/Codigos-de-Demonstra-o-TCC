@@ -455,21 +455,47 @@ Interromper com `Ctrl+C` (ou parar a célula no notebook).
 
 ---
 
-## Evidências experimentais (captura e validação)
+## Evidências experimentais e validação
 
-![Figura 1 – Coleta com osciloscópio na entrada de tensão do BL0942 (ponto de medição no circuito).](figuras/fig01_osciloscopio_tensao_bl0942.bmp)  
+### Figura 1 – Coleta com osciloscópio na entrada de tensão do BL0942
+![](figuras/fig01_osciloscopio_tensao_bl0942.bmp)  
 *Fonte: próprio autor.*
 
-![Figura 2 – Medição de tensão e corrente com carga: lâmpada incandescente de 40 W.](figuras/fig02_lampada_40w.jpeg)  
+**Explicação:** A figura apresenta a medição da tensão AC na entrada de medição do BL0942 utilizando o osciloscópio/multímetro de bancada. Esta etapa é usada para validar que o ponto de entrada do sensor está recebendo a tensão esperada da rede antes do processamento interno do CI e do envio ao Google Sheets, garantindo que a referência de tensão do sistema está correta.
+
+---
+
+### Figura 2 – Medição de tensão e corrente com carga: lâmpada incandescente de 40 W
+![](figuras/fig02_lampada_40w.jpeg)  
 *Fonte: próprio autor.*
 
-![Figura 3 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + lâmpada LED.](figuras/fig03_lampada_40w_led.jpeg)  
+**Explicação:** Nesta condição de ensaio foi aplicada uma carga resistiva simples (lâmpada de 40 W). A figura registra simultaneamente a leitura de tensão (em torno de 220 V) e a corrente correspondente. Esse cenário é importante porque tende a apresentar forma de onda mais próxima de senoidal e fator de potência elevado, servindo como referência para comparação com cargas não lineares.
+
+---
+
+### Figura 3 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + lâmpada LED
+![](figuras/fig03_lampada_40w_led.jpeg)  
 *Fonte: próprio autor.*
 
-![Figura 4 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + secador de cabelo.](figuras/fig04_lampada_40w_secador.png)  
+**Explicação:** A figura mostra o ensaio com a lâmpada de 40 W em conjunto com uma lâmpada LED. O objetivo aqui é observar o comportamento quando há uma carga não linear (driver eletrônico do LED) somada a uma carga resistiva. Essa combinação tende a introduzir distorções na corrente e pode impactar harmônicas e fator de potência, justificando o uso do módulo de FFT/THD no dashboard.
+
+---
+
+### Figura 4 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + secador de cabelo
+![](figuras/fig04_lampada_40w_secador.jpeg)  
 *Fonte: próprio autor.*
 
-![Figura 5 – Dashboard em funcionamento: tendências de tensão, corrente, potência e fator de potência; forma de onda no tempo; e espectro (FFT) com harmônicas e THD₅.](figuras/fig05_dashboard_funcionamento.png)  
+**Explicação:** Este ensaio adiciona uma carga de maior potência (secador de cabelo) junto à lâmpada de 40 W. A figura evidencia o aumento significativo de corrente no circuito e permite verificar a estabilidade das leituras do sistema em condições mais exigentes. Esse cenário também é útil para observar possíveis quedas de tensão (variação da rede) e o impacto no cálculo de potência e fator de potência.
+
+---
+
+### Figura 5 – Dashboard em funcionamento (monitoramento + waveform + FFT + THD₅)
+![](figuras/fig05_dashboard_funcionamento.jpeg)  
 *Fonte: próprio autor.*
+
+**Explicação:** A figura apresenta o dashboard operando em tempo real, com (i) gráficos superiores de tendência para tensão, corrente, potência e fator de potência, (ii) forma de onda de corrente no domínio do tempo (normalizada e com remoção de componente DC) e (iii) espectro em frequência obtido por rFFT com janela de Hann. No quadro do espectro são destacados os picos harmônicos e o cálculo do THD₅ (2ª a 5ª harmônicas), permitindo diagnosticar distorções e comparar diferentes tipos de carga.
+
+
+
 
 ```
