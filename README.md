@@ -455,4 +455,21 @@ Interromper com `Ctrl+C` (ou parar a célula no notebook).
 
 ---
 
+## Evidências experimentais (captura e validação)
+
+![Figura 1 – Coleta com osciloscópio na entrada de tensão do BL0942 (ponto de medição no circuito).](figuras/fig01_osciloscopio_tensao_bl0942.bmp)  
+*Fonte: próprio autor.*
+
+![Figura 2 – Medição de tensão e corrente com carga: lâmpada incandescente de 40 W.](figuras/fig02_lampada_40w.jpeg)  
+*Fonte: próprio autor.*
+
+![Figura 3 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + lâmpada LED.](figuras/fig03_lampada_40w_led.jpeg)  
+*Fonte: próprio autor.*
+
+![Figura 4 – Medição de tensão e corrente com carga combinada: lâmpada de 40 W + secador de cabelo.](figuras/fig04_lampada_40w_secador.png)  
+*Fonte: próprio autor.*
+
+![Figura 5 – Dashboard em funcionamento: tendências de tensão, corrente, potência e fator de potência; forma de onda no tempo; e espectro (FFT) com harmônicas e THD₅.](figuras/fig05_dashboard_funcionamento.png)  
+*Fonte: próprio autor.*
+
 ```
