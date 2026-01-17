@@ -6,8 +6,8 @@
 #include <vector>
 
 // --- CONFIGURAÇÕES DE REDE E GOOGLE ---
-const char* ssid = "TP-Link_D9FF";
-const char* password = "16069138";
+const char* ssid = "nome do wifi";
+const char* password = "Senha do wifi";
 const char* google_script_id = "AKfycbxZo3zrlLdSPQdehR3EhI_YTTnUPxXkcm8txwEH-26ZzgtHZL9yXUsA9xgWC8CYm82GNA";
 
 // --- Configurações de Hardware BL0942 (ESP32-C6) ---
