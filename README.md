@@ -455,20 +455,4 @@ Interromper com `Ctrl+C` (ou parar a célula no notebook).
 
 ---
 
-## ✅ Observação importante (consistência entre firmware e dashboard)
-
-* O firmware envia `"wave"` como **string CSV** (ex.: `"1,2,3,..."`).
-* O dashboard aceita exatamente esse formato no “Caso B” (string com valores separados por vírgula).
-* A validação `wave_pts == 1024` no firmware evita que o dashboard processe waveforms incompletas.
-
----
-
-## 📌 O que este Markdown cobre no TCC
-
-* Descrição do pipeline completo (aquisição → nuvem → visualização)
-* Justificativa das etapas de DSP (DC removal, janela, rFFT)
-* Diagnósticos no firmware para validar qualidade de aquisição (Fs e f_wave)
-* Estrutura de dados e formato de envio para integração com Sheets
-
----
 ```
